@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="jiayi">
+        <title>Alarmclock</title>
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./assets/img/letter-n.png" type="x-icon">
+        <script src ="assets/js/index.js" defer></script>       
+    </head>
+    <body>
+        <div class="container">
+            <p>Shape factory</p>
+            <div class="controls">
+                <select id="shapeSelect">
+                    <option value="Shape">Shape</option>
+                    <option value="Circle">Circle</option>
+                    <option value="Square">Square</option>
+                </select>
+                <select id="colorSelect">
+                    <option value="Color">Color</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Purple">Purple</option>
+                </select>
+                <button onclick="createShape()">Create</button>
+            </div>
+        </div>              
+        <div id="shapeGrid" class="grid"></div>       
+        <div id="info" class="info">Unit Info</div>
+    </body>
+</html>
